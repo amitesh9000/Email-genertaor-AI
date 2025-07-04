@@ -550,6 +550,19 @@ def main():
                     if st.button("🗑️ Delete", key=f"delete_{i}"):
                         st.session_state.generated_emails.pop(-(i+1))
                         st.rerun()
+    
+    # Footer
+    st.markdown("---")
+    st.markdown("""
+    <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; margin-top: 2rem;">
+        <p style="color: white; font-size: 1.1rem; margin: 0; font-weight: 600;">
+            Made with ❤️ by <span style="color: #ffd700; font-weight: bold;">AmiteshIntelligenceSystems</span> (AI SY's)
+        </p>
+        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0.5rem 0 0 0;">
+            ✨ Empowering communication through AI ✨
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main() 
